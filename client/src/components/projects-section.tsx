@@ -66,7 +66,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Projects</h2>
-          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-600 mx-auto"></div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -95,7 +95,7 @@ export function ProjectsSection() {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <Badge variant="secondary" className="text-gray-600 dark:text-gray-400 mb-3">
+                  <Badge variant="secondary" className="bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-800 mb-3">
                     {project.period}
                   </Badge>
                   <h3 className="text-xl font-bold mb-3 line-clamp-2">{project.title}</h3>
@@ -103,7 +103,7 @@ export function ProjectsSection() {
                     {project.description}
                   </p>
                   <div className="flex justify-between items-center">
-                    <Badge className="bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300">
+                    <Badge className="bg-primary/10 text-primary border border-primary/20">
                       {project.category}
                     </Badge>
                     <Button variant="ghost" size="sm" className="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200">

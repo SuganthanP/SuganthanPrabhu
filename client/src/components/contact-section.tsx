@@ -104,7 +104,7 @@ export function ContactSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-          <div className="w-24 h-1 bg-gray-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-600 mx-auto"></div>
           <p className="text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
             Ready to collaborate on innovative projects in space technology, embedded systems, or renewable energy? Let's connect!
           </p>

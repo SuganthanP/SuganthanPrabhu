@@ -68,7 +68,7 @@ export function AwardsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Awards & Achievements</h2>
-          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-600 mx-auto"></div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -85,7 +85,7 @@ export function AwardsSection() {
                 <CardContent className="p-0">
                   <div className="flex items-center mb-4">
                     <i className={`${award.icon} text-2xl mr-3`}></i>
-                    <Badge variant="secondary" className="text-xs">
+                    <Badge variant="secondary" className="text-xs bg-white/20 text-white border-white/30">
                       {award.year}
                     </Badge>
                   </div>

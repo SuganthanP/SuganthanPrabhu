@@ -24,7 +24,7 @@ export function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-blue-50 dark:from-gray-900 dark:to-blue-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -33,12 +33,12 @@ export function HeroSection() {
         >
           {/* Professional photo placeholder */}
           <motion.div 
-            className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 dark:from-gray-600 dark:to-gray-700 p-1"
+            className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-blue-600 p-1 shadow-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-              <i className="fas fa-user text-6xl text-gray-400"></i>
+            <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <i className="fas fa-user text-6xl text-primary"></i>
             </div>
           </motion.div>
           
@@ -66,13 +66,13 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <span className="px-4 py-2 bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 rounded-full">
+            <span className="px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full">
               Electronics Engineering
             </span>
-            <span className="px-4 py-2 bg-gray-200 text-gray-700 dark:bg-gray-600 dark:text-gray-300 rounded-full">
+            <span className="px-4 py-2 bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-800 rounded-full">
               Space Technology
             </span>
-            <span className="px-4 py-2 bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 rounded-full">
+            <span className="px-4 py-2 bg-green-50 text-green-700 border border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-800 rounded-full">
               Embedded Systems
             </span>
           </motion.div>
@@ -94,7 +94,7 @@ export function HeroSection() {
               onClick={downloadResume}
               variant="outline"
               size="lg"
-              className="border-gray-300 text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
               <i className="fas fa-download mr-2"></i>
               Download Resume

@@ -53,7 +53,7 @@ export function CertificationsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Certifications</h2>
-          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-600 mx-auto"></div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -69,8 +69,8 @@ export function CertificationsSection() {
               <Card className="p-6 h-full hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="flex items-center mb-4">
-                    <i className="fas fa-certificate text-2xl text-gray-600 dark:text-gray-400 mr-3"></i>
-                    <Badge variant="secondary" className="text-sm text-gray-600 dark:text-gray-400">
+                    <i className="fas fa-certificate text-2xl text-primary mr-3"></i>
+                    <Badge variant="secondary" className="text-sm bg-primary/10 text-primary border border-primary/20">
                       {cert.platform}
                     </Badge>
                   </div>

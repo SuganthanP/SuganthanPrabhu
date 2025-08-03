@@ -35,7 +35,7 @@ export function ExperienceSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Experience</h2>
-          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-600 mx-auto"></div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
