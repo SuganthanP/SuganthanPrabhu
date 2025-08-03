@@ -66,7 +66,7 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-xl font-bold text-primary">
+          <div className="text-xl font-bold text-gray-800 dark:text-gray-200">
             Suganthan Prabhu
           </div>
           
@@ -75,8 +75,8 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className={`transition-colors hover:text-primary ${
-                  activeSection === item.href.substring(1) ? 'text-primary' : ''
+                className={`transition-colors hover:text-gray-600 dark:hover:text-gray-300 ${
+                  activeSection === item.href.substring(1) ? 'text-gray-800 dark:text-gray-200 font-semibold' : 'text-gray-600 dark:text-gray-400'
                 }`}
               >
                 {item.label}
@@ -121,7 +121,7 @@ export function Navigation() {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="block py-2 hover:text-primary transition-colors"
+                  className="block py-2 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
                 >
                   {item.label}
                 </button>

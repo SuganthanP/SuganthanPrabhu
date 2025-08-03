@@ -35,7 +35,7 @@ export function ExperienceSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Experience</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -48,19 +48,19 @@ export function ExperienceSection() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
             >
-              <Card className={`p-8 h-full ${exp.color === 'primary' ? 'bg-gradient-to-br from-primary/5 to-primary/10' : 'bg-gradient-to-br from-accent/5 to-accent/10'} hover:shadow-xl transition-all duration-300`}>
+              <Card className="p-8 h-full bg-gray-50 dark:bg-gray-800 hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="flex items-center mb-6">
-                    <div className={`w-16 h-16 ${exp.color === 'primary' ? 'bg-primary' : 'bg-accent'} rounded-xl flex items-center justify-center mr-4`}>
+                    <div className="w-16 h-16 bg-gray-600 dark:bg-gray-700 rounded-xl flex items-center justify-center mr-4">
                       <i className={`${exp.icon} text-white text-2xl`}></i>
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">{exp.title}</h3>
-                      <p className={`${exp.color === 'primary' ? 'text-primary' : 'text-accent'} font-semibold`}>{exp.company}</p>
+                      <p className="text-gray-600 dark:text-gray-400 font-semibold">{exp.company}</p>
                     </div>
                   </div>
                   
-                  <Badge className={`${exp.color === 'primary' ? 'bg-primary' : 'bg-accent'} text-white mb-4`}>
+                  <Badge className="bg-gray-600 dark:bg-gray-700 text-white mb-4">
                     {exp.year}
                   </Badge>
                   
@@ -73,7 +73,7 @@ export function ExperienceSection() {
                       <Badge 
                         key={skill} 
                         variant="secondary"
-                        className={`${exp.color === 'primary' ? 'text-primary' : 'text-accent'}`}
+                        className="text-gray-600 dark:text-gray-400"
                       >
                         {skill}
                       </Badge>

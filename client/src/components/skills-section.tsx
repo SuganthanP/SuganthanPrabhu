@@ -41,7 +41,7 @@ export function SkillsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Technical Skills</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -56,8 +56,8 @@ export function SkillsSection() {
             >
               <Card className="p-6 h-full hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-0">
-                  <div className={`w-12 h-12 ${category.color === 'primary' ? 'bg-primary/10' : 'bg-accent/10'} rounded-lg flex items-center justify-center mb-4`}>
-                    <i className={`${category.icon} text-2xl ${category.color === 'primary' ? 'text-primary' : 'text-accent'}`}></i>
+                  <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4">
+                    <i className={`${category.icon} text-2xl text-gray-600 dark:text-gray-400`}></i>
                   </div>
                   <h3 className="text-xl font-bold mb-4">{category.title}</h3>
                   <div className="space-y-2">
@@ -65,7 +65,7 @@ export function SkillsSection() {
                       <Badge 
                         key={skill} 
                         variant="secondary"
-                        className={`mr-2 mb-2 ${category.color === 'primary' ? 'bg-primary/10 text-primary' : 'bg-accent/10 text-accent'}`}
+                        className="mr-2 mb-2 bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300"
                       >
                         {skill}
                       </Badge>

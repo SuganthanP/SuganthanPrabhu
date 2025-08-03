@@ -94,7 +94,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-br from-primary/90 to-accent/90 text-white">
+    <section id="contact" className="section-padding bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
@@ -104,8 +104,8 @@ export function ContactSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-white to-accent-300 mx-auto"></div>
-          <p className="text-xl text-gray-200 mt-6 max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-gray-400 mx-auto"></div>
+          <p className="text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
             Ready to collaborate on innovative projects in space technology, embedded systems, or renewable energy? Let's connect!
           </p>
         </motion.div>
@@ -219,7 +219,7 @@ export function ContactSection() {
               <Button 
                 type="submit" 
                 disabled={contactMutation.isPending}
-                className="w-full bg-white text-primary hover:bg-gray-100"
+                className="w-full bg-white text-gray-900 hover:bg-gray-100"
               >
                 <i className="fas fa-paper-plane mr-2"></i>
                 {contactMutation.isPending ? "Sending..." : "Send Message"}

@@ -49,12 +49,12 @@ export function AwardsSection() {
   ];
 
   const colorClasses = {
-    yellow: "from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 text-yellow-600",
-    orange: "from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 text-orange-600",
-    green: "from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 text-green-600",
-    blue: "from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 text-blue-600",
-    purple: "from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 text-purple-600",
-    indigo: "from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 text-indigo-600"
+    yellow: "from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-300",
+    orange: "from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-300",
+    green: "from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-300",
+    blue: "from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-300",
+    purple: "from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-300",
+    indigo: "from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-300"
   };
 
   return (
@@ -68,7 +68,7 @@ export function AwardsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Awards & Achievements</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

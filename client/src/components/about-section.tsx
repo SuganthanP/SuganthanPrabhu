@@ -34,7 +34,7 @@ export function AboutSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
+          <div className="w-24 h-1 bg-gray-400 dark:bg-gray-600 mx-auto"></div>
         </motion.div>
         
         <div className="max-w-4xl mx-auto">
@@ -63,9 +63,9 @@ export function AboutSection() {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
               >
-                <Card className={`text-center p-6 ${interest.color === 'primary' ? 'bg-primary/5' : 'bg-accent/5'} hover:shadow-lg transition-all duration-300`}>
+                <Card className="text-center p-6 bg-gray-50 dark:bg-gray-800 hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-0">
-                    <i className={`${interest.icon} text-3xl ${interest.color === 'primary' ? 'text-primary' : 'text-accent'} mb-4`}></i>
+                    <i className={`${interest.icon} text-3xl text-gray-600 dark:text-gray-400 mb-4`}></i>
                     <h3 className="font-semibold mb-2">{interest.title}</h3>
                     <p className="text-sm text-muted-foreground">{interest.description}</p>
                   </CardContent>
