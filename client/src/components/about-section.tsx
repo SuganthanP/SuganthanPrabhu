@@ -4,11 +4,11 @@ import { Card, CardContent } from "@/components/ui/card";
 export function AboutSection() {
   const interests = [
     {
-      icon: "fas fa-satellite",
-      title: "Space Technology",
-      description: "ISRO Intern working on Hexapod Spider Robot",
-      color: "primary"
-    },
+    icon: "fas fa-tools", // hardware-focused
+    title: "Hardware Electronics",
+    description: "Specialized in Control systems and Analog Systems",
+    color: "amber" // or 'yellow', 'orange', 'lime' depending on your theme
+  },
     {
       icon: "fas fa-microchip",
       title: "Embedded Systems",
@@ -18,7 +18,7 @@ export function AboutSection() {
     {
       icon: "fas fa-leaf",
       title: "Renewable Energy",
-      description: "Solar tracking and energy storage systems",
+      description: "Solar, Wind Energy and energy storage systems",
       color: "primary"
     }
   ];

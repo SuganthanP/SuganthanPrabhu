@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-
+import profileImage from '@/assets/photocopy.jpg'; // or adjust the path like './assets/profile.png' if '@/...' doesn't resolve
+import resumePDF from '@/assets/Suganthan_resume.pdf';
 export function HeroSection() {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -16,7 +17,7 @@ export function HeroSection() {
   const downloadResume = () => {
     // Create a link element to trigger download
     const link = document.createElement('a');
-    link.href = '/Suganthan_resume.pdf';
+    link.href =resumePDF;
     link.download = 'Suganthan_Prabhu_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -32,15 +33,20 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           {/* Professional photo placeholder */}
-          <motion.div 
-            className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-blue-600 p-1 shadow-lg"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="w-full h-full rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
-              <i className="fas fa-user text-6xl text-primary"></i>
-            </div>
-          </motion.div>
+<motion.div 
+  className="w-72 h-72 mx-auto mt-20 mb-8"
+>
+  <img
+    src={profileImage}
+    alt="Suganthan Prabhu"
+    className="w-full h-full object-cover rounded-full"
+  />
+</motion.div>
+
+
+
+
+
           
           <motion.h1 
             className="text-5xl md:text-7xl font-bold mb-6 text-primary"
@@ -57,7 +63,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Enthusiastic ECE student passionate about Embedded Systems, Space Technology, and Control Systems
+            Enthusiastic ECE student passionate about Embedded Systems, Renewable Energy, and Control Systems
           </motion.p>
           
           <motion.div 
@@ -70,10 +76,10 @@ export function HeroSection() {
               Electronics Engineering
             </span>
             <span className="px-4 py-2 bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-800 rounded-full">
-              Space Technology
+              Embedded Systems
             </span>
             <span className="px-4 py-2 bg-green-50 text-green-700 border border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-800 rounded-full">
-              Embedded Systems
+              Renewable Energy
             </span>
           </motion.div>
           

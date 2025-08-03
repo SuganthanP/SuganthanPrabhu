@@ -26,19 +26,19 @@ export function EducationSection() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                <Card className="shadow-lg hover:shadow-xl transition-shadow">
-                  <CardContent className="p-6">
-                    <span className="text-primary font-semibold">2022 - 2026</span>
-                    <h3 className="text-xl font-bold mb-2">B.E Electronics and Communication Engineering</h3>
-                    <p className="text-muted-foreground mb-3">Kumaraguru College of Technology, Anna University</p>
-                    <div className="flex items-center">
-                      <span className="text-2xl font-bold text-accent">8.4</span>
-                      <span className="ml-2 text-muted-foreground">CGPA (Till 5th Semester)</span>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+<div className="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+  <Card className="shadow-lg hover:shadow-xl transition-shadow">
+    <CardContent className="p-6">
+      <span className="text-primary font-semibold">2022 - 2026</span>
+      <h3 className="text-xl font-bold mb-2">B.E  Electronics and Communication Engineering</h3>
+      <p className="text-muted-foreground mb-3">Kumaraguru College of Technology, Anna University</p>
+      <div className="flex items-center">
+        <span className="text-2xl font-bold text-blue-600">8.4</span> {/* changed from text-accent to text-black */}
+        <span className="ml-2 text-muted-foreground">CGPA (Till 6th Semester)</span>
+      </div>
+    </CardContent>
+  </Card>
+</div>
               
               <div className="relative z-10">
                 <motion.div 
@@ -67,23 +67,23 @@ export function EducationSection() {
                   className="w-12 h-12 bg-accent rounded-full flex items-center justify-center"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <i className="fas fa-school text-white"></i>
+                  <i className="fas fa-school text-blue-600"></i>
                 </motion.div>
               </div>
               
               <div className="md:w-1/2 md:pl-8 mb-6 md:mb-0 order-3">
                 <Card className="shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
-                    <span className="text-accent font-semibold">2010 - 2022</span>
+                    <span className="text-primary font-semibold">2020 - 2022</span>
                     <h3 className="text-xl font-bold mb-2">Higher Secondary Education</h3>
                     <p className="text-muted-foreground mb-3">Rasi Matric Hr. Sec School, Tamil Nadu State Board</p>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <span className="text-2xl font-bold text-accent">99%</span>
+                        <span className="text-2xl font-bold text-blue-600">99%</span>
                         <span className="block text-sm text-muted-foreground">10th Grade</span>
                       </div>
                       <div>
-                        <span className="text-2xl font-bold text-accent">97%</span>
+                        <span className="text-2xl font-bold text-blue-600">97%</span>
                         <span className="block text-sm text-muted-foreground">12th Grade</span>
                       </div>
                     </div>

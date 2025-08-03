@@ -2,7 +2,12 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-
+import solarTrackerImage from '@/assets/solar_tracker_icon.jpg';
+import incineratorImage from '@/assets/ICI.jpg';
+import waveImage from '@/assets/WI.png';
+import VImage from '@/assets/Picture21.jpg';
+import SCImage from '@/assets/SC.jpg';
+import MLImage from '@/assets/ML.jpg';
 export function ProjectsSection() {
   const projects = [
     {
@@ -10,31 +15,40 @@ export function ProjectsSection() {
       period: "Dec 2022 – May 2023",
       description: "Designed a cost-effective tracking system to enhance PV efficiency, comparing its performance with motor and hydraulic systems for solar power applications.",
       category: "Solar Energy",
-      icon: "fas fa-sun",
+      image: solarTrackerImage,
       gradient: "from-yellow-400 to-orange-500"
+    },
+    {
+      title: "Plastic Incineration and Waste Management",
+      period: "Jul 2023 – Oct 2023",
+      description: "Gained insights into the efficiency and emissions profiles of different methods to optimize and scale up the incineration process.",
+      category: "Environmental",
+       image: incineratorImage,
+      gradient: "from-gray-600 to-gray-800"
+    },
+        {
+      title: "Mooring-Less Wave Energy Platform",
+      period: "Nov 2023 – Apr 2024",
+      description: "Designed a mooring-less system to harness wave energy using Pascal's principle, enabling cost-effective power generation and desalination.",
+      category: "Wave Energy",
+      image: waveImage, 
+      gradient: "from-blue-400 to-cyan-500"
     },
     {
       title: "Vacuum-Based Energy Storage System",
       period: "May 2024 – Jul 2024",
       description: "Developed a vacuum-based energy storage system that efficiently stores excess renewable energy and releases it on demand.",
       category: "Energy Storage",
-      icon: "fas fa-battery-three-quarters",
+     image: VImage, 
       gradient: "from-purple-500 to-blue-600"
     },
-    {
-      title: "Mooring-Less Wave Energy Platform",
-      period: "Nov 2023 – Apr 2023",
-      description: "Designed a mooring-less system to harness wave energy using Pascal's principle, enabling cost-effective power generation and desalination.",
-      category: "Wave Energy",
-      icon: "fas fa-water",
-      gradient: "from-blue-400 to-cyan-500"
-    },
+
     {
       title: "PV Cooling System with Metal Chip-Based Thermal Regulation",
       period: "Jul 2024 – Feb 2025",
       description: "Circulating water behind solar panels reduces heat, improving efficiency, while the heated water can be reused for other purposes.",
       category: "Thermal Management",
-      icon: "fas fa-thermometer-half",
+      image: SCImage, 
       gradient: "from-green-400 to-blue-500"
     },
     {
@@ -42,17 +56,10 @@ export function ProjectsSection() {
       period: "Mar 2025 – Present",
       description: "Developing a machine learning system to predict solar plant inefficiencies, estimate financial losses, and optimize configurations for maximum ROI.",
       category: "Machine Learning",
-      icon: "fas fa-brain",
+      image: MLImage, 
       gradient: "from-red-400 to-pink-500"
-    },
-    {
-      title: "Plastic Incineration and Waste Management",
-      period: "Jul 2023 – Oct 2023",
-      description: "Gained insights into the efficiency and emissions profiles of different methods to optimize and scale up the incineration process.",
-      category: "Environmental",
-      icon: "fas fa-recycle",
-      gradient: "from-gray-600 to-gray-800"
     }
+
   ];
 
   return (
@@ -80,20 +87,16 @@ export function ProjectsSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Card className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 group">
-                <div className={`h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
-                  <motion.i 
-                    className={`${project.icon} text-6xl text-white`}
-                    whileHover={{ 
-                      scale: 1.1,
-                      rotate: project.icon.includes('sun') ? 12 : 
-                              project.icon.includes('battery') ? 0 : 
-                              project.icon.includes('water') ? 0 :
-                              project.icon.includes('thermometer') ? 12 :
-                              project.icon.includes('brain') ? 0 : 180
-                    }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </div>
+<div className="h-48 w-full overflow-hidden">
+  {project.image && (
+    <img
+      src={project.image}
+      alt={project.title}
+      className="h-full w-full object-cover"
+    />
+  )}
+</div>
+
                 <CardContent className="p-6">
                   <Badge variant="secondary" className="bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-800 mb-3">
                     {project.period}

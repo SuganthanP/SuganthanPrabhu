@@ -7,20 +7,20 @@ export function ExperienceSection() {
     {
       title: "Project Intern",
       company: "URSC (U R Rao Satellite Centre), ISRO",
-      year: "2025",
+      year: "May 2025 - July 2025",
       icon: "fas fa-rocket",
       color: "primary",
-      description: "Currently working on the design, control algorithms, and sensor integration for a Hexapod Spider Robot for autonomous movement and obstacle navigation.",
+      description: "Worked on the design, control algorithms, and sensor integration for a Hexapod Spider Robot for autonomous movement and obstacle navigation.",
       skills: ["Control Algorithms", "Sensor Integration", "Robotics"]
     },
     {
       title: "Research Intern",
       company: "Kinowave",
-      year: "2024",
+      year: "June 2024 - July 2024",
       icon: "fas fa-solar-panel",
       color: "accent",
       description: "Worked on renewable energy projects, contributing to control system design, automation, and SCADA integration.",
-      skills: ["Control Systems", "SCADA", "Automation"]
+      skills: ["Control Systems", "SCADA", "Automation","Sensor Fusion"]
     }
   ];
 
