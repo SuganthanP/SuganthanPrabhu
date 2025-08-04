@@ -1,6 +1,28 @@
+# Node modules and build
 node_modules
 dist
+build
+
+# System files
 .DS_Store
+Thumbs.db
+
+# Server build/public folders (if not needed)
 server/public
-vite.config.ts.*
+server/dist
+
+# Lock and cache
+*.log
+*.lock
 *.tar.gz
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Vite config backups or backups with extensions
+vite.config.ts.*
+vite.config.js.*
+
+# IDEs
+.vscode
+.idea
