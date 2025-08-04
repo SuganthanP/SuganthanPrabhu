@@ -17,6 +17,7 @@ export default defineConfig(async () => {
   }
 
   return {
+    root: path.resolve(__dirname, "client"),
     plugins,
     base: "/SuganthanPrabhu/", // ✅ Necessary for GitHub Pages
     resolve: {
