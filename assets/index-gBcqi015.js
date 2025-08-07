@@ -20866,12 +20866,9 @@ function RR() {
 function AR() {
     return x.jsxs($w, {
         children: [x.jsx(vp, {
-            path: "/",
+            path: "*",
             component: kR
-        }), x.jsx(vp, {
-		path: "*",	
-            component: RR
-        })]
+        })})]
     })
 }
 
