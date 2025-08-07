@@ -19270,8 +19270,8 @@ function tR() {
         })
     })
 }
-const nR = "/PP/assets/photocopy-DZRhKElq.jpg",
-    rR = "/PP/assets/Suganthan_resume-Cg99YzGR.pdf";
+const nR = "./assets/photocopy-DZRhKElq.jpg",
+    rR = "./assets/Suganthan_resume-Cg99YzGR.pdf";
 
 function iR() {
     const e = () => {
@@ -19866,12 +19866,12 @@ function fR() {
         })
     })
 }
-const hR = "/PP/assets/solar_tracker_icon-ROYtEFp4.jpg",
-    pR = "/PP/assets/ICI-DceYuKae.jpg",
-    mR = "/PP/assets/WI-4fgI6hRj.png",
-    gR = "/PP/assets/Picture21-BT-BAAbZ.jpg",
-    yR = "/PP/assets/SC-Dr9qWH-7.jpg",
-    vR = "/PP/assets/ML-zQn25eB8.jpg";
+const hR = "./assets/solar_tracker_icon-ROYtEFp4.jpg",
+    pR = "./assets/ICI-DceYuKae.jpg",
+    mR = "./assets/WI-4fgI6hRj.png",
+    gR = "./assets/Picture21-BT-BAAbZ.jpg",
+    yR = "./assets/SC-Dr9qWH-7.jpg",
+    vR = "./assets/ML-zQn25eB8.jpg";
 
 function xR() {
     const e = [{
@@ -20713,7 +20713,7 @@ function bR() {
                     children: "Ready to collaborate on innovative projects in space technology, embedded systems, or renewable energy? Let's connect!"
                 })]
             }), x.jsxs("div", {
-                className: "grid lg:grid-cols-2 gap-12",
+                className: "grid place-items-center h-screen",
                 children: [x.jsxs(ye.div, {
                     initial: {
                         opacity: 0,
@@ -20730,10 +20730,10 @@ function bR() {
                         once: !0
                     },
                     children: [x.jsx("h3", {
-                        className: "text-2xl font-bold mb-8",
+                        className: "text-2xl font-bold mb-8 w-fit mx-auto text-center",
                         children: "Contact Information"
                     }), x.jsx("div", {
-                        className: "space-y-6",
+                        className: "space-y-6 grid h-screen items-start justify-center grid-cols-1 mx-auto",
                         children: c.map((f, p) => x.jsxs(ye.div, {
                             initial: {
                                 opacity: 0,
@@ -20788,79 +20788,7 @@ function bR() {
                     viewport: {
                         once: !0
                     },
-                    children: [x.jsx("h3", {
-                        className: "text-2xl font-bold mb-8",
-                        children: "Send a Message"
-                    }), x.jsxs("form", {
-                        onSubmit: a,
-                        className: "space-y-6",
-                        children: [x.jsxs("div", {
-                            children: [x.jsx(Zi, {
-                                htmlFor: "name",
-                                className: "text-white",
-                                children: "Name *"
-                            }), x.jsx(zo, {
-                                id: "name",
-                                name: "name",
-                                value: e.name,
-                                onChange: u,
-                                className: "bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:border-white/40",
-                                placeholder: "Your Name",
-                                required: !0
-                            })]
-                        }), x.jsxs("div", {
-                            children: [x.jsx(Zi, {
-                                htmlFor: "email",
-                                className: "text-white",
-                                children: "Email *"
-                            }), x.jsx(zo, {
-                                id: "email",
-                                name: "email",
-                                type: "email",
-                                value: e.email,
-                                onChange: u,
-                                className: "bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:border-white/40",
-                                placeholder: "your.email@example.com",
-                                required: !0
-                            })]
-                        }), x.jsxs("div", {
-                            children: [x.jsx(Zi, {
-                                htmlFor: "subject",
-                                className: "text-white",
-                                children: "Subject"
-                            }), x.jsx(zo, {
-                                id: "subject",
-                                name: "subject",
-                                value: e.subject,
-                                onChange: u,
-                                className: "bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:border-white/40",
-                                placeholder: "Subject"
-                            })]
-                        }), x.jsxs("div", {
-                            children: [x.jsx(Zi, {
-                                htmlFor: "message",
-                                className: "text-white",
-                                children: "Message *"
-                            }), x.jsx(f0, {
-                                id: "message",
-                                name: "message",
-                                value: e.message,
-                                onChange: u,
-                                rows: 5,
-                                className: "bg-white/10 border-white/20 text-white placeholder:text-gray-300 focus:border-white/40 resize-none",
-                                placeholder: "Your message...",
-                                required: !0
-                            })]
-                        }), x.jsxs(yr, {
-                            type: "submit",
-                            disabled: o.isPending,
-                            className: "w-full bg-white text-gray-900 hover:bg-gray-100",
-                            children: [x.jsx("i", {
-                                className: "fas fa-paper-plane mr-2"
-                            }), o.isPending ? "Sending..." : "Send Message"]
-                        })]
-                    })]
-                })]
+		})]
             })]
         })
     })
