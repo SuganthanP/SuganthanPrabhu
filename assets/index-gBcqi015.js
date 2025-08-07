@@ -20868,7 +20868,9 @@ function AR() {
         children: [x.jsx(vp, {
             path: "*",
             component: kR
-        })})]
+	}), x.jsx(vp, {
+            component: RR
+        })]
     })
 }
 
