@@ -20869,6 +20869,7 @@ function AR() {
             path: "/",
             component: kR
         }), x.jsx(vp, {
+		path: "*",	
             component: RR
         })]
     })
